@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
+    "electron-connect": "^0.6.1",
     "gulp": "^3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",

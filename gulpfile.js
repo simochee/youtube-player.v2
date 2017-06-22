@@ -7,7 +7,6 @@ const pug = require('gulp-pug');
 const sourcemaps = require('gulp-sourcemaps');
 const stylus = require('gulp-stylus');
 const watch = require('gulp-watch');
-const webpack = require('webpack-stream');
 // Electron
 const electron = require('electron-connect').server.create();
 

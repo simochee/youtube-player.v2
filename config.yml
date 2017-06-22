@@ -9,3 +9,12 @@ window:
     frame: false
     # 常に最上位に固定
     # alwaysOnTop: true
+
+applicationMenu:
+    -
+        label: YouTube Player
+        submenu:
+            -
+                label: 'About',
+            -
+                label: 'Quit'
