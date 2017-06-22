@@ -1,0 +1,11 @@
+window:
+    # 起動時のウィンドウサイズ（必須）
+    width: 640
+    height: 360
+    # リサイズ時の最小のウィンドウサイズ（必須）
+    minWidth: 420
+    minHeight: 240
+    # タイトルバーのスタイル（hidden | ...）
+    frame: false
+    # 常に最上位に固定
+    # alwaysOnTop: true

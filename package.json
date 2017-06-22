@@ -1,0 +1,30 @@
+{
+  "name": "electron-youtube-player.v2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "webpack": "webpack --watch",
+    "dev": "concurrently \"gulp build\" \"npm run webpack\"",
+    "start": "gulp app"
+  },
+  "author": "Ryoya Tamura <simochee@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.11",
+    "path": "^0.12.7",
+    "url": "^0.11.0",
+    "yamljs": "^0.2.10"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-watch": "^4.3.11",
+    "postcss-cssnext": "^2.11.0",
+    "webpack": "^3.0.0"
+  }
+}
