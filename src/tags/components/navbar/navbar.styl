@@ -1,0 +1,66 @@
+navbar
+    $height = 42px
+    $padding = 12px
+    box-sizing border-box
+    height $height
+    left 0
+    position fixed
+    top 0
+    width 100%
+    z-index 5001
+    transition background .12s ease, opacity .3s ease
+    &[data-hide]
+        opacity 0
+    h1
+        color #fff
+        flex 1
+        left $padding
+        line-height $height
+        overflow hidden
+        position absolute
+        right ($height * 2 + $padding * 2)
+        text-overflow ellipsis
+        top 0
+        transition opacity .2s ease
+        white-space nowrap
+    .header-nav
+        display flex
+        position absolute
+        right $padding
+        top 0
+        transition width .2s ease
+        width $height * 2
+        button
+            color #fff
+            font-size 15px
+            height $height
+            width $height
+            z-index 1
+        .nav-search
+            display flex
+            position relative
+            form
+                bottom 0
+                left 0
+                position absolute
+                right 0
+                top 0
+            input
+                $size = 36px
+                $duration = .12s
+                $easing = ease
+                border-bottom 1px solid transparent
+                box-sizing border-box
+                color #fff
+                display block
+                font-size 15px
+                height $size
+                margin-top (($height - $size) / 2)
+                opacity .4
+                padding 0
+                transition border-color $duration $easing, margin $duration $easing, padding $duration $easing, opacity $duration $easing
+                width 0
+                &::-webkit-input-placeholder
+                    color rgba(#000, .6)
+            [type=submit]
+                display none

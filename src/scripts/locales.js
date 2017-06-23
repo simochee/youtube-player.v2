@@ -1,6 +1,7 @@
 // 言語ファイルまとめ
-const YAML = require('yamljs');
+const fs = require('fs');
+const yaml = require('js-yaml');
 
 module.exports = {
-    ja: YAML.load('../../locales/ja.yml'),
+    ja: yaml.safeLoad(fs.readFileSync('./locales/ja.yml', 'utf-8')),
 };

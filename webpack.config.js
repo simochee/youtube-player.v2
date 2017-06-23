@@ -29,7 +29,7 @@ module.exports = [
                     enforce: 'post',
                     exclude: /node_modules/,
                     use: ['buble-loader']
-                }
+                },
             ]
         },
         resolve: {

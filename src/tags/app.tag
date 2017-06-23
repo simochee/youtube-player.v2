@@ -1,4 +1,4 @@
-app
+app(data-page-type="{pageType}")
 
     navbar
 
