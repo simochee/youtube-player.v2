@@ -15,6 +15,6 @@ applicationMenu:
         label: YouTube Player
         submenu:
             -
-                label: 'About',
+                label: 'About'
             -
                 label: 'Quit'

@@ -54,12 +54,15 @@ gulp.task('self-restart', () => {
             electron.restart();
             console.log('Application Restart');
         }
+        if(data.match(/rl/)) {
+            electron.reload();
+        }
     });
 });
 
 gulp.task('app:watch', () => {
     // ElectronのLiveReload
-    watch(['main.js', 'config.yml'], electron.restart);
+    watch(['app.js', 'config.yml'], electron.restart);
     watch('./build/**/*', electron.reload);
 });
 
