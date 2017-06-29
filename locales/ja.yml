@@ -1,1 +1,6 @@
-test: hello world
+search:
+    inputPlaceholder: 検索ワード または 動画URL
+
+playlist:
+    newPlaylist: 新しいプレイリスト
+    inputPlaylistName: プレイリストのタイトルを入力

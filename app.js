@@ -41,8 +41,8 @@ const createWindow = () => {
     });
 
     // アプリケーションメニューを独自に実装する
-    const menu = Menu.buildFromTemplate( config.applicationMenu );
-    Menu.setApplicationMenu(menu);
+    // const menu = Menu.buildFromTemplate( config.applicationMenu );
+    // Menu.setApplicationMenu(menu);
 };
 
 // readyイベントはエレクトロンの呼び出しと

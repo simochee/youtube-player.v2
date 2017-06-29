@@ -23,7 +23,7 @@ navbar
         top 0
         transition opacity .2s ease
         white-space nowrap
-    .header-nav
+    .navbar-nav
         display flex
         position absolute
         right $padding
@@ -32,7 +32,7 @@ navbar
         width $height * 2
         button
             color #fff
-            font-size 15px
+            font-size 20px
             height $height
             width $height
             z-index 1
@@ -61,6 +61,30 @@ navbar
                 transition border-color $duration $easing, margin $duration $easing, padding $duration $easing, opacity $duration $easing
                 width 0
                 &::-webkit-input-placeholder
-                    color rgba(#000, .6)
+                    color rgba(#fff, .6)
             [type=submit]
                 display none
+    &[data-mode=search]
+        h1
+            opacity 0
+        .navbar-nav
+            width calc(100% - 24px)
+            .nav-search
+                flex 1
+                input
+                    border-color rgba(#fff, .5)
+                    padding 0 15px 0 $height
+                    opacity 1
+                    width 100%
+
+app[data-page=search]
+    navbar
+        background $theme
+
+app[data-page=video]
+    navbar
+        background rgba(#000, .6)
+
+app[data-is-playing]
+    navbar
+        background-color transparent

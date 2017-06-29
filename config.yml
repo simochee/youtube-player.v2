@@ -8,7 +8,7 @@ window:
     # タイトルバーのスタイル（hidden | ...）
     frame: false
     # 常に最上位に固定
-    # alwaysOnTop: true
+    alwaysOnTop: true
 
 applicationMenu:
     -

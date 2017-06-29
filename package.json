@@ -10,11 +10,20 @@
   "author": "Ryoya Tamura <simochee@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.4.1",
     "electron": "^1.6.11",
+    "localStorage": "^1.0.3",
+    "moment": "^2.18.1",
     "path": "^0.12.7",
     "riot": "^3.6.0",
+    "riot-route": "^3.1.1",
+    "sqlite3": "^3.1.8",
+    "superagent": "^3.5.2",
     "url": "^0.11.0",
-    "yamljs": "^0.2.10"
+    "yamljs": "^0.2.10",
+    "youtube-api": "^2.0.8",
+    "youtube-node": "^1.3.0",
+    "youtube-player": "^5.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

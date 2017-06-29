@@ -1,0 +1,110 @@
+search
+    background #eee
+    box-sizing border-box
+    display block
+    height 100%
+    padding-top 42px
+    width 100%
+    .search-results
+        height calc(100% - 8px)
+        margin 4px 2px
+        overflow-y scroll
+        &::-webkit-scrollbar
+            width 4px
+        &::-webkit-scrollbar-button,
+        &::-webkit-scrollbar-corner
+            display none
+        &::-webkit-scrollbar-track-piece
+            background #ccc
+        &::-webkit-scrollbar-thumb
+            background $theme
+    h2
+        border-bottom 1px solid #ccc
+        color #222
+        font-size 16px
+        margin 0 1%
+        padding 12px 1%
+        small
+            color #777
+            font-size 12px
+    .result-item
+        border-bottom 1px solid #ccc
+        display flex
+        margin 0 1%
+        padding 12px 2%
+        &.active
+            background #ddd
+        &.selected
+            background #aaa
+        .thumbnail
+            $width = 200px
+            background #000
+            height ($width / 16 * 9)
+            position relative
+            width $width
+            img
+                display: block
+                height 100%
+                object-fit contain
+                width 100%
+            .duration
+                background rgba(#000, .65)
+                border-radius 2px
+                bottom 5px
+                color rgba(#fff, .8)
+                display block
+                font-size 12px
+                height 14px
+                line-height 14px
+                padding 0 .4em
+                position absolute
+                right 5px
+        .contents
+            flex 1
+            padding 5px 12px
+            h3
+                font-size 16px
+                line-height 1.2
+                max-height 2.4em
+                overflow hidden
+            .details
+                color #555
+                display flex
+                flex-wrap wrap
+                font-size 12px
+                margin-top 8px
+                .detail-item
+                    height 1.4em
+                    margin-top 4px
+                    overflow hidden
+                    text-overflow ellipsis
+                    white-space nowrap
+                    .icon
+                        margin 0 .4em 0 12px
+            .description
+                color #666
+                font-size 11px
+                line-height 1.5
+                margin 18px 12px 0
+    @keyframes loader {
+        40% {
+            color #333
+        }
+        60% {
+            color #888
+        }
+    }
+    .search-loader
+        animation loader 1s linear infinite
+        color #aaa
+        font-size 15px
+        font-weight 200
+        letter-spacing .1em
+        margin 20px 0
+        text-align center
+        .icon
+            margin-right .5em
+
+[data-is-playing]
+    search
+        background rgba(#000, .6)

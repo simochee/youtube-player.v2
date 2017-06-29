@@ -1,0 +1,27 @@
+home
+    align-items center
+    background $theme
+    display flex
+    height 100%
+    justify-content center
+    width 100%
+    @keyframes fadeIn {
+        0% {
+            opacity 0
+            top 12px
+        }
+        100% {
+            opacity 1
+            top 0
+        }
+    }
+    .app-brand
+        display flex
+        font-size 24px
+        position relative
+        top 0
+        animation fadeIn 1.2s ease
+        .black
+            color #000
+        .white
+            color #fff

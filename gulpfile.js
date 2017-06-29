@@ -31,10 +31,10 @@ gulp.task('stylus', () => {
 
 gulp.task('build:watch', () => {
     // ビルドの監視
-    watch('./src/pug/**/*.pug', () => {
+    watch(['./src/pug/**/*.pug', './locales/*.yml'], () => {
         gulp.start('pug');
     });
-    watch('./src/stylus/**/*.styl', () => {
+    watch(['./src/stylus/**/*.styl', './src/tags/**/*.styl'], () => {
         gulp.start('stylus');
     });
 });

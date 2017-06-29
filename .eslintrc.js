@@ -47,7 +47,9 @@ module.exports = {
     ],
     "globals": {
         "riot": true,
-        "opts": true
+        "opts": true,
+        "observer": true,
+        "ipc": true,
     },
     "parserOptions": {
         "sourceType": "module"

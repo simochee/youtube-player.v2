@@ -1,0 +1,47 @@
+drawer
+    bottom 0
+    display block
+    overflow-x hidden
+    overflow-y scroll
+    position fixed
+    right 0
+    top 0
+    transition width .2s ease
+    width 0
+    z-index 10001
+    &.open
+        width 240px
+    .drawer
+        background rgba(#111, .98)
+        display flex
+        flex-direction column
+        height 100%
+        width 240px
+        &-header
+            $height = 42px
+            button
+                color rgba(#fff, .8)
+                display block
+                font-size 20px
+                height $height
+                margin 0 12px 0 auto
+                width $height
+        &-nav
+            .nav-anchor
+                align-items center
+                display flex
+                height 42px
+                padding 0 8px
+                text-decoration none
+                .icon
+                    color rgba(#fff, .7)
+                    font-size 18px
+                    line-height 42px
+                    margin-right 8px
+                    text-align center
+                    width 42px
+                p
+                    color rgba(#fff, .9)
+                    flex 1
+                    font-size 13px
+                    letter-spacing .1em
